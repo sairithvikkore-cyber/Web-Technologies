@@ -1,0 +1,15 @@
+const c=document.getElementById("c");
+const x=c.getContext("2d");
+x.fillStyle="blue";
+x.fillRect(20,20,150,80);
+x.beginPath();
+x.arc(300,100,40,0,Math.PI*2);
+x.fillStyle="red";
+x.fill();
+x.beginPath();
+x.moveTo(50,200);
+x.lineTo(450,200);
+x.stroke();
+x.font="20px Arial";
+x.fillStyle="black";
+x.fillText("HTML5 Canvas",170,160);
